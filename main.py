@@ -4,7 +4,7 @@ import os
 
 app = FastAPI()
 
-TELEGRAM_TOKEN = os.getenv("7602960350:AAEoW-756QqOqJiTGETlSbfhXBYb4Z_myW4")
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 BASE_URL = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}"
 
 @app.post("/telegram-webhook")
